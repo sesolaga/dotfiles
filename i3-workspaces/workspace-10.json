@@ -1,0 +1,25 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 720,
+       "width": 1280,
+       "x": 0,
+       "y": 0
+    },
+    "marks": [],
+    "name": "Hiddify",
+    "percent": 1,
+    "swallows": [
+       {
+       // "class": "^Hiddify$",
+       // "instance": "^hiddify$",
+       // "machine": "^monstrum$",
+       // "title": "^Hiddify$"
+       }
+    ],
+    "type": "con"
+}
+

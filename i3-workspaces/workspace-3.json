@@ -1,0 +1,22 @@
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1561,
+       "width": 1916,
+       "x": 1922,
+       "y": 18
+    },
+    "marks": [],
+    "name": "Visual Studio Code",
+    "percent": 1,
+    "swallows": [
+       {
+        "class": "^Code$",
+        "instance": "^code$"
+       }
+    ],
+    "type": "con"
+}
+
