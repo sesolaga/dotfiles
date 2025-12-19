@@ -1,0 +1,16 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Only apply 4 spaces to PHP 
+[*.php]
+indent_size = 4
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+# 2 space indentation
+indent_style = space
+indent_size = 2
