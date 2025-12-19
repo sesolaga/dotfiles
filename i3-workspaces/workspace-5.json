@@ -1,0 +1,21 @@
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+        "height": 461,
+        "width": 734,
+        "x": 0,
+        "y": 0
+    },
+    "marks": [],
+    "name": "Ranger",
+    "percent": 1,
+    "swallows": [
+        {
+            "class": "^kitty$",
+            "title": "^ranger$"
+        }
+    ],
+    "type": "con"
+}
