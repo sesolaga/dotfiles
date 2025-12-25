@@ -1,0 +1,14 @@
+{
+    "description": "CAPS to Ctrl/Esc",
+    "manipulators": [
+        {
+            "from": { "key_code": "caps_lock" },
+            "to": {
+                "key_code": "right_control",
+                "lazy": true
+            },
+            "to_if_alone": { "key_code": "escape" },
+            "type": "basic"
+        }
+    ]
+}
