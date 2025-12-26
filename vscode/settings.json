@@ -1,0 +1,13 @@
+{
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "workbench.colorTheme": "Aura Dracula Spirit (Synthwave)",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontSize": 16,
+    "editor.lineHeight": 1.5,
+    "workbench.settings.openDefaultKeybindings": true,
+    "files.autoSave": "afterDelay",
+    "editor.minimap.enabled": false,
+    "vim.foldfix": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.fontFamily": "Dank Mono, 'Droid Sans Mono', 'monospace', monospace"
+}
