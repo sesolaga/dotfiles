@@ -1,4 +1,15 @@
 [
+  // Zen Mode
+  {
+    "command": "workbench.action.toggleZenMode",
+    "key": "space z z",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "command": "workbench.action.toggleMaximizedPanel",
+    "key": "space z m",
+    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
   // Navigation
   {
     "command": "workbench.action.navigateLeft",
