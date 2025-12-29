@@ -61,13 +61,17 @@
   },
   {
     "command": "workbench.action.splitEditor",
-    "key": "s h",
+    "key": "space w h",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
   },
   {
     "command": "workbench.action.splitEditorDown",
-    "key": "s v",
+    "key": "space w v",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "ctrl+\\",
+    "command": "workbench.files.action.showActiveFileInExplorer"
   },
   // Coding
   {
@@ -183,6 +187,11 @@
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
   {
+    "command": "explorer.newFolder",
+    "key": "f",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
     "command": "explorer.openToSide",
     "key": "s",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
@@ -239,5 +248,14 @@
     "command": "workbench.action.debug.continue",
     "key": "space d c",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && inDebugMode && debugState == 'stopped'"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-extension.vim_ctrl+p",
+    "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+  },
+  {
+    "key": "ctrl+\\",
+    "command": "-workbench.action.splitEditor"
   }
 ]
