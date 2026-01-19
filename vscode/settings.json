@@ -1,64 +1,87 @@
 {
-    // Zoom settings
-    "window.zoomPerWindow": false,
-    "window.zoomLevel": 0.5,
-    // Theme and Icons
-    "workbench.colorTheme": "Aura Dracula Spirit (Synthwave)",
-    "workbench.iconTheme": "material-icon-theme",
-    // Cursor Animation
-    "editor.cursorSmoothCaretAnimation": "on",
-    // Font settings
-    "editor.fontFamily": "Dank Mono, 'Droid Sans Mono', 'monospace', monospace",
-    // Font sizes
-    "editor.fontSize": 16,
-    "debug.console.fontSize": 15,
-    "terminal.integrated.fontSize": 16,
-    // Copilot Chat font size
-    "chat.editor.fontSize": 15,
-    "chat.fontSize": 15,
-    // Git SCM (Source Control Management) font size
-    "scm.inputFontSize": 14,
-    "markdown.preview.fontSize": 14,
-    // Line Height
-    "editor.lineHeight": 1.5,
-    // Lines before the bottom
-    "editor.cursorSurroundingLines": 30,
-    // Auto Save
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 0,
-    // Disable minimap
-    "editor.minimap.enabled": false,
-    // Hide Agent sessions sidebar
-    "chat.viewSessions.orientation": "stacked",
-    // ------------------ Vim settings ------------------
-    // Allow navigating with folds correctly
-    "vim.foldfix": true,
-    // Enable EasyMotion
-    "vim.easymotion": true,
-    // Smart relative line numbers
-    "vim.smartRelativeLine": true,
-    // Enable surround.vim plugin 
-    "vim.surround": true,
-    // Set leader key to "\"
-    "vim.leader": "\\",
-    // Disable Neovim integration
-    "vim.enableNeovim": false,
-    "vim.handleKeys": {
-        "<C-d>": true,
-        "<C-u>": true,
-        "<C-i>": true, 
-        "<C-s>": false,
-        "<C-z>": false,
-    },
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    },
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "editor.autoClosingBrackets": "always",
-    "editor.autoClosingOvertype": "always",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "diffEditor.ignoreTrimWhitespace": false
+  // Zoom settings
+  "window.zoomPerWindow": false,
+  "window.zoomLevel": 0.5,
+  // Theme and Icons
+  "workbench.colorTheme": "Aura Dracula Spirit (Synthwave)",
+  "workbench.iconTheme": "material-icon-theme",
+  // Cursor Animation
+  "editor.cursorSmoothCaretAnimation": "on",
+  // Font settings
+  "editor.fontFamily": "Dank Mono, 'Droid Sans Mono', 'monospace', monospace",
+  // Font sizes
+  "editor.fontSize": 16,
+  "debug.console.fontSize": 15,
+  "terminal.integrated.fontSize": 16,
+  // Copilot Chat font size
+  "chat.editor.fontSize": 15,
+  "chat.fontSize": 15,
+  // Git SCM (Source Control Management) font size
+  "scm.inputFontSize": 14,
+  "markdown.preview.fontSize": 14,
+  // Line Height
+  "editor.lineHeight": 1.5,
+  // Lines before the bottom
+  "editor.cursorSurroundingLines": 30,
+  // Auto Save
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 0,
+  // Disable minimap
+  "editor.minimap.enabled": false,
+  // Hide Agent sessions sidebar
+  "chat.viewSessions.orientation": "stacked",
+  "editor.tokenColorCustomizations": {
+    "[Aura Dracula Spirit (Synthwave)]": {
+       "comments": "#785fa0"
+    }
+  },
+  // Disable inline suggestions - use for learning 
+  // "editor.inlineSuggest.enabled": false,
+  // Breadcrumbs
+  // "breadcrumbs.enabled": false,
+  // ------------------ Vim settings ------------------
+  // Enable using system clipboard
+  "vim.useSystemClipboard": true,
+  // Allow navigating with folds correctly
+  "vim.foldfix": true,
+  // Enable EasyMotion
+  "vim.easymotion": true,
+  // Smart relative line numbers
+  "vim.smartRelativeLine": true,
+  // Enable surround.vim plugin
+  "vim.surround": true,
+  // Set leader key to "\"
+  "vim.leader": "\\",
+  // Disable Neovim integration
+  "vim.enableNeovim": false,
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-u>": true,
+    "<C-i>": true,
+    "<C-s>": false,
+    "<C-z>": false,
+    "<C-p>": false,
+  },
+  "github.copilot.enable": {
+    "*": true, 
+    "plaintext": true, 
+    "markdown": true, 
+    "scminput": true,
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingOvertype": "always",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.editor.empty.hint": "hidden",
+  "haskell.manageHLS": "GHCup",
+  "[haskell]": {
+    "editor.defaultFormatter": "haskell.haskell"
+  },
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "chat.tools.terminal.autoApprove": {
+    "npx prisma": true
+  }
 }

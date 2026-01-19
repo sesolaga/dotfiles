@@ -141,10 +141,7 @@
   },
   {
     "args": {
-      "commands": [
-        "workbench.view.scm",
-        "workbench.scm.focus"
-      ]
+      "commands": ["workbench.view.scm", "workbench.scm.focus"]
     },
     "command": "runCommands",
     "key": "space g g",
@@ -218,44 +215,80 @@
     "key": "enter",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && explorerResourceIsFolder && !inputFocus"
   },
-  // Debug
+
+  // Source control
+
+  // {
+  //   "key": "ctrl+j",
+  //   "command": "workbench.action.compareEditor.nextChange",
+  //   "when": "textCompareEditorVisible"
+  // },
+  // {
+  //   "key": "ctrl+k",
+  //   "command": "workbench.action.compareEditor.previousChange",
+  //   "when": "textCompareEditorVisible"
+  // },
+  // stage current file
   {
-    "command": "workbench.action.debug.selectandstart",
-    "key": "space d a",
-    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && debuggersAvailable"
-  },
-  {
-    "command": "workbench.action.debug.stop",
-    "key": "space d t",
-    "when": "vim.mode == 'Normal' && editorTextFocus && inDebugMode && !focusedSessionIsAttached"
-  },
-  {
-    "command": "workbench.action.debug.stepOver",
-    "key": "space d o",
-    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && inDebugMode && debugState == 'stopped'"
-  },
-  {
-    "command": "editor.debug.action.toggleBreakpoint",
-    "key": "space d b",
+    "key": "space g s",
+    "args": {
+      "commands": [
+        "git.stage",
+        "workbench.action.focusActiveEditorGroup"
+      ]
+    },
+    "command": "runCommands",
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
+  // unstage current file
   {
-    "command": "editor.debug.action.showDebugHover",
-    "key": "space d e",
-    "when": "vim.mode == 'Normal' && editorTextFocus && inDebugMode && debugState == 'stopped'"
+    "key": "space g u",
+    "command": "git.unstage",
+    "when": "vim.mode == 'Normal' && editorTextFocus"
+  },
+  // discard changes in current file
+  {
+    "key": "space g D",
+    "command": "git.clean",
+    "when": "vim.mode == 'Normal' && editorTextFocus"
+  },
+  // discard current hunk/change
+  {
+    "key": "space g d",
+    "command": "git.revertSelectedRanges",
+    "when": "vim.mode == 'Normal' && editorTextFocus && !inDebugRepl"
+  },
+  // go-to-next-change extension keybindings
+  {
+    "key": "ctrl+j",
+    "command": "go-to-next-change.go-to-next-scm-change"
   },
   {
-    "command": "workbench.action.debug.continue",
-    "key": "space d c",
-    "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && inDebugMode && debugState == 'stopped'"
+    "key": "alt+z",
+    "command": "-go-to-next-change.go-to-next-scm-change"
   },
   {
-    "key": "ctrl+p",
-    "command": "-extension.vim_ctrl+p",
-    "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+    "key": "ctrl+k",
+    "command": "go-to-next-change.go-to-previous-scm-change"
   },
   {
-    "key": "ctrl+\\",
-    "command": "-workbench.action.splitEditor"
+    "key": "alt+a",
+    "command": "-go-to-next-change.go-to-previous-scm-change"
+  },
+  {
+    "key": "ctrl+]",
+    "command": "go-to-next-change.go-to-next-changed-file"
+  },
+  {
+    "key": "ctrl+alt+z",
+    "command": "-go-to-next-change.go-to-next-changed-file"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "go-to-next-change.go-to-previous-changed-file"
+  },
+  {
+    "key": "ctrl+alt+a",
+    "command": "-go-to-next-change.go-to-previous-changed-file"
   }
 ]
