@@ -1,7 +1,8 @@
 {
+  // Appearance
+  "workbench.panel.defaultLocation": "right",
   // Zoom settings
   "window.zoomPerWindow": false,
-  "window.zoomLevel": 0.5,
   // Theme and Icons
   "workbench.colorTheme": "Aura Dracula Spirit (Synthwave)",
   "workbench.iconTheme": "material-icon-theme",
@@ -10,9 +11,9 @@
   // Font settings
   "editor.fontFamily": "Dank Mono, 'Droid Sans Mono', 'monospace', monospace",
   // Font sizes
-  "editor.fontSize": 16,
+  "editor.fontSize": 15,
   "debug.console.fontSize": 15,
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontSize": 15,
   // Copilot Chat font size
   "chat.editor.fontSize": 15,
   "chat.fontSize": 15,
@@ -32,10 +33,20 @@
   "chat.viewSessions.orientation": "stacked",
   "editor.tokenColorCustomizations": {
     "[Aura Dracula Spirit (Synthwave)]": {
-       "comments": "#785fa0"
-    }
+      "comments": "#785fa0",
+    },
   },
-  // Disable inline suggestions - use for learning 
+
+  // --------------------- Rust settings ---------------------
+  "files.readonlyInclude": {
+    "**/.cargo/registry/src/**/*.rs": true,
+    "**/.cargo/git/checkouts/**/*.rs": true,
+    "**/lib/rustlib/src/rust/library/**/*.rs": true,
+  },
+  "rust-analyzer.checkOnSave": false,
+  // ---------------------------------------------------------
+
+  // Disable inline suggestions - use for learning
   // "editor.inlineSuggest.enabled": false,
   // Breadcrumbs
   // "breadcrumbs.enabled": false,
@@ -63,9 +74,9 @@
     "<C-p>": false,
   },
   "github.copilot.enable": {
-    "*": true, 
-    "plaintext": true, 
-    "markdown": true, 
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
     "scminput": true,
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -76,12 +87,20 @@
   "workbench.editor.empty.hint": "hidden",
   "haskell.manageHLS": "GHCup",
   "[haskell]": {
-    "editor.defaultFormatter": "haskell.haskell"
+    "editor.defaultFormatter": "haskell.haskell",
   },
   "gitlens.ai.model": "vscode",
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "chat.tools.terminal.autoApprove": {
-    "npx prisma": true
-  }
+    "npx prisma": true,
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "zenMode.hideStatusBar": false,
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "window.zoomLevel": 1,
 }

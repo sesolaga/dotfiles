@@ -15,10 +15,10 @@
     "command": "workbench.action.navigateLeft",
     "key": "ctrl-h"
   },
-  {
-    "command": "workbench.action.navigateRight",
-    "key": "ctrl-l"
-  },
+  // {
+  //   "command": "workbench.action.navigateRight",
+  //   "key": "ctrl-l"
+  // },
   {
     "command": "workbench.action.navigateUp",
     "key": "ctrl-k"
@@ -53,11 +53,6 @@
     "command": "runCommands",
     "key": "space e",
     "when": "sideBarFocus && !inputFocus"
-  },
-  {
-    "command": "workbench.action.toggleSidebarVisibility",
-    "key": "space e",
-    "when": "vim.mode == 'Normal' && editorTextFocus && foldersViewVisible"
   },
   {
     "command": "workbench.action.splitEditor",
@@ -290,5 +285,46 @@
   {
     "key": "ctrl+alt+a",
     "command": "-go-to-next-change.go-to-previous-changed-file"
-  }
+  },
+  {
+    "key": "ctrl+shift+backspace",
+    "command": "workbench.action.navigateToLastEditLocation"
+  },
+  {
+    "key": "ctrl+k ctrl+q",
+    "command": "-workbench.action.navigateToLastEditLocation"
+  },
+  {
+    "key": "ctrl+'",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+shift+,",
+    "command": "-editor.action.inPlaceReplace.up",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+,",
+    "command": "workbench.action.showAllSymbols"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-workbench.action.showAllSymbols"
+},
+{
+    "key": "shift+enter",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+        "text": "\u001b\r"
+    },
+    "when": "terminalFocus"
+},
+{
+  "key": "ctrl+e",
+  "command": "-workbench.action.quickOpen"
+}
 ]
