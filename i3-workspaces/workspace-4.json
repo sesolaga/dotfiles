@@ -9,12 +9,12 @@
        "y": 18
     },
     "marks": [],
-    "name": "Yandex Browser",
+    "name": "home browser",
     "percent": 1,
     "swallows": [
        {
-        "class": "^Yandex\\-browser$",
-        "instance": "^yandex\\-browser$"
+        "class": "^org\\.mozilla\\.firefox$",
+        "instance": "^Navigator$"
        }
     ],
     "type": "con"

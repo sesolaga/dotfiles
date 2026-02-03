@@ -9,12 +9,12 @@
         "y": 0
     },
     "marks": [],
-    "name": "Kitty terminal",
+    "name": "terminal",
     "percent": 1,
     "swallows": [
         {
-            "class": "^kitty$",
-            "instance": "^kitty$"
+            "class": "^org\\.wezfurlong\\.wezterm$",
+            "instance": "^org\\.wezfurlong\\.wezterm$"
         }
     ],
     "type": "con"
